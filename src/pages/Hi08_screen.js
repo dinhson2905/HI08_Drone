@@ -15,12 +15,12 @@ class Hi08_screen extends Component {
         return (
             <div className="container-fluid" style={{ paddingLeft: 0 }} >
                 <div class="row">
-                    <div class="col-md-2"> <SideBar /></div>
-                    <div class="col-md-9">
+                    <div className="col-md-2"> <SideBar /></div>
+                    <div className="col-md-9">
                         <Router>
                             <Switch>
                                 <Route exact path="/hi08">
-                                    <DashBoard />
+                                    <DashBoard _updateLink = {this.props._updateLink}/>
                                 </Route>
                                 <Route path="/hi08/location">
                                     <Location />

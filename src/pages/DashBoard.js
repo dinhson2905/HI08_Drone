@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import SideBar from '../components/SideBar'
 
 class DashBoard extends Component {
+
     render() {
-        // componentDidMount(){
-            
-        // }
         return (
             <div >
                 <h2> DashBoard </h2>
