@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.sidenav{
+    height: 100%;
+}
+
+
+.sidenav .nav-item{
+  /* border-bottom: 1px solid rgb(92, 81, 81); */
+}
+
+.content-dashboard{
+  
+}
+

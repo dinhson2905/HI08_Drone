@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import Location from './pages/Location'
+import Hi_08_Screen from './pages/Hi08_screen';
 import HomePage from './pages/HomePage';
-import DashBoard from './pages/DashBoard'
-import Projects from './pages/Projects'
-import Drones from './pages/Drones'
-import Members from './pages/Members'
+import './App.css'
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 
-
 class App extends Component {
+  state = {
+    Link : ['Home']
+  }
+  _updateLink=(value)=>{
+    this.state.Link.push(value)
+  }   
   render() {
     return (
       <Router>
@@ -26,20 +28,8 @@ class App extends Component {
             <Route exact path="/">
               <HomePage />
             </Route>
-            <Route exact path="/hi08">
-              <DashBoard />
-            </Route>
-            <Route path="/hi08/location">
-              <Location />
-            </Route>
-            <Route path="/hi08/drones">
-              <Drones />
-            </Route>
-            <Route path="/hi08/projects">
-              <Projects />
-            </Route>
-            <Route path="/hi08/members">
-              <Members />
+            <Route path="/hi08/">
+              <Hi_08_Screen _updateLink = {this._updateLink} />
             </Route>
           </Switch>
           <Footer />

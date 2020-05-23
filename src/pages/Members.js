@@ -4,7 +4,7 @@ class Members extends Component {
     render() {
         return (
             <div>
-                Members
+                <h2> Members </h2>
             </div>
         );
     }
