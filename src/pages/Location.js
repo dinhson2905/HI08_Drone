@@ -4,7 +4,7 @@ class Location extends Component {
     render() {
         return (
             <div>
-                Location
+                <h2>Location</h2>
             </div>
         );
     }

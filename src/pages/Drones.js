@@ -4,7 +4,7 @@ class Drones extends Component {
     render() {
         return (
             <div>
-                Drones
+                <h2> Drones </h2>
             </div>
         );
     }

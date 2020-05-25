@@ -9,7 +9,7 @@ import {
 class Nav extends Component {
 	render() {
 		return (
-			<nav className="navbar navbar-expand-lg navbar-dark default-color">
+			<nav className="navbar navbar-expand-lg navbar-dark default-color header" >
         <a className="navbar-brand" href="#">Navbar</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
