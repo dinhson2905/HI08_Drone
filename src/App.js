@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import Nav from './components/Nav';
+import Nav from './components/Nav';         // header
 import Footer from './components/Footer';
-// import Hi_08_Screen from './pages/Hi08_screen';
 import HomePage from './pages/HomePage';
-import './App.css'
 import SideBar from './components/SideBar'
 import Location from './pages/Location'
 import DashBoard from './pages/DashBoard'
 import Projects from './pages/Projects'
 import Drones from './pages/Drones'
 import Members from './pages/Members'
+import './App.css'
 
 import {
   BrowserRouter as Router,
@@ -18,13 +17,6 @@ import {
 } from "react-router-dom";
 
 class App extends Component {
-  state = {
-    Link: ['Home']
-  }
-  _updateLink = (value) => {
-    console.log("updatelink")
-    this.state.Link.push(value)
-  }
   render() {
     return (
       <Router>
