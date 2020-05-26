@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Breadcrumbs, Link, Typography, Grid, Paper } from '@material-ui/core';
-import { Table } from 'react-bootstrap';
+// import { Table } from 'react-bootstrap';
 import DashboardProjectTable from '../components/DashboardProjectTable';
 import DashboardMemberTable from '../components/DashboardMemberTable';
 import DashboardDroneStatistic from '../components/DashboardDroneStatistic';
@@ -148,9 +148,6 @@ export default function DashBoard() {
 				<Box pt={4}>
 				</Box>
 			</div>
-
-
-
 		</div>
 	);
 }
