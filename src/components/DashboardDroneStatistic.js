@@ -18,7 +18,7 @@ export default function Deposits() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <DashboardTitle>Dones</DashboardTitle>
+      <DashboardTitle>Drones</DashboardTitle>
       <Typography component="p" variant="h6">
         Total: 100
       </Typography>
@@ -35,7 +35,7 @@ export default function Deposits() {
         on 19 May, 2020
       </Typography>
       <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
+        <Link color="primary" href="./hi08/drones" >
           View detail
         </Link>
       </div>

@@ -41,6 +41,7 @@
 
 .sidenav{
     height: 100%;
+    margin-left: -15px;
 }
 
 
@@ -77,4 +78,14 @@
 
 .drone_image_detail{
   border: 1px solid black;
+}
+
+.breadcrumbs{
+  padding: 0px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.content{
+  width: 100% !important;
 }

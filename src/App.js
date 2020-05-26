@@ -28,10 +28,10 @@ class App extends Component {
               <HomePage />
             </Route>
             <Route path="/hi08">
-              <div className="container-fluid" style={{ padding: 0 }}>
+              <div className="container-fluid" >
                 <div className="row">
                   <div className="col-md-2"> <SideBar /> </div>
-                  <div className="col-md-10" style={{padding:"0px"}}>
+                  <div className="col-md-10 content" style={{padding:"0px"}}>
                     <Route exact path="/hi08">
                       <DashBoard />
                     </Route>
@@ -48,7 +48,6 @@ class App extends Component {
                       <Members />
                     </Route>
                     <Route path="/hi08/drones/:droneID" render={(props) => <DroneDetail {...props}/>}>
-                      {/* <DroneDetail /> */}
                     </Route>
                   </div>
                 </div>
