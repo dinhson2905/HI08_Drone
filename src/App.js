@@ -8,6 +8,7 @@ import DashBoard from './pages/DashBoard'
 import Projects from './pages/Projects'
 import Drones from './pages/Drones'
 import Members from './pages/Members'
+import DroneDetail from './pages/DoneDetail'
 import './App.css'
 
 import {
@@ -30,14 +31,14 @@ class App extends Component {
               <div className="container-fluid" style={{ padding: 0 }}>
                 <div className="row">
                   <div className="col-md-2"> <SideBar /> </div>
-                  <div className="col-md-10">
+                  <div className="col-md-10" style={{padding:"0px"}}>
                     <Route exact path="/hi08">
                       <DashBoard />
                     </Route>
                     <Route path="/hi08/location">
                       <Location />
                     </Route>
-                    <Route path="/hi08/drones">
+                    <Route exact path="/hi08/drones">
                       <Drones />
                     </Route>
                     <Route path="/hi08/projects">
@@ -45,6 +46,9 @@ class App extends Component {
                     </Route>
                     <Route path="/hi08/members">
                       <Members />
+                    </Route>
+                    <Route path="/hi08/drones/:droneID" render={(props) => <DroneDetail {...props}/>}>
+                      {/* <DroneDetail /> */}
                     </Route>
                   </div>
                 </div>

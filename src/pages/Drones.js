@@ -18,10 +18,10 @@ class Drones extends Component {
                 <h3 style={{textAlign:"center", padding:"10px"}}> Drones List</h3>
                 <div className="row">
                     
-                    {[1, 2, 3, 4, 5 ,6, 7, 8, 9, 10].map(() => {
+                    {[1, 2, 3, 4, 5 ,6, 7, 8, 9, 10].map((droneID) => {
                         return (
                             <div className="col-lg-3 drone-card">
-                                <DroneCard />
+                                <DroneCard droneID = {droneID} droneName = {droneID}/>
                             </div>
                         )
                     })}

@@ -61,3 +61,20 @@
   margin: 10px 0px 5px 0px;
   padding: 10px 0px 10px 0px;
 }
+
+.drones{
+  padding:0px;
+}
+
+.location{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.drone_image_detail img{
+  width: 100%;
+}
+
+.drone_image_detail{
+  border: 1px solid black;
+}
