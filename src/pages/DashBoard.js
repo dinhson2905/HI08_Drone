@@ -8,7 +8,7 @@ import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import DashboardLocation from '../components/DashboardLocation';
-
+import HomeIcon from '@material-ui/icons/Home';
 
 const drawerWidth = 240;
 
@@ -104,17 +104,16 @@ export default function DashBoard() {
 
 
 	return (
-		<div className="DashBoard">
-			<div className="header">
-				<Box pt={3}>
-				</Box>
+		<div className="DashBoard container">
+			<div className="row breadcrumbs">
+				<HomeIcon />
 				<Breadcrumbs aria-label="breadcrumb">
 					<Link color="inherit" href="/">
 						Home
-						</Link>
-					<Link color="inherit" href="/hi_08/">
+					</Link>
+					<Link color="inherit" href="/hi08">
 						HI_08
-						</Link>
+					</Link>
 					<Typography color="textPrimary">DashBoard</Typography>
 				</Breadcrumbs>
 			</div>
@@ -123,10 +122,12 @@ export default function DashBoard() {
 			<div className="container">
 				<Grid container spacing={3}>
 					<Grid item xs={12} md={8} lg={8}>
-						<Paper className={fixedHeightPaper}>
+						<Link href="./hi08/location">
+							<Paper className={fixedHeightPaper}>
 							{/* <Chart /> */}
-							<DashboardLocation />
-						</Paper>
+								<DashboardLocation />
+							</Paper>
+						</Link>
 					</Grid>
 					<Grid item xs={12} md={4} lg={4}>
 						<Paper className={fixedHeightPaper}>
