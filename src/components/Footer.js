@@ -33,7 +33,7 @@ class Footer extends Component {
 								</a>
 								{/*Instagram*/}
 								<a className="ins-ic">
-									<i className="fab fa-instagram white-text"> </i>
+									<i className="fab fa-instagram white-text mr-4"> </i>
 								</a>
 							</div>
 							{/* Grid column */}
@@ -99,7 +99,7 @@ class Footer extends Component {
 							<h6 className="text-uppercase font-weight-bold">Contact</h6>
 							<hr className="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
 							<p>
-								<i className="fas fa-home mr-3" /> New York, NY 10012, US</p>
+								<i className="fas fa-home mr-3" /> Ha Noi, Vietnam</p>
 							<p>
 								<i className="fas fa-envelope mr-3" /> info@example.com</p>
 							<p>
