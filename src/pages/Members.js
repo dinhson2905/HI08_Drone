@@ -11,21 +11,48 @@ const columns = [
     dataIndex: 'name',
   },
   {
-    title: 'Age',
-    dataIndex: 'age',
-    sorter: (a, b) => a.age - b.age,
+    title: 'Birthday',
+    dataIndex: 'birthday',
+    sorter: (a, b) => new Date(a.birthday) - new Date(b.birthday),
+  },
+  {
+  	title: 'Level',
+  	dataIndex: 'level',
+  	filters: [
+  	  {
+        text: 'Commander',
+        value: 'Commander',
+      },
+      {
+        text: 'Worker',
+        value: 'Worker',
+      },
+  	],
+  	onFilter: (value, record) => record.level.indexOf(value) === 0,
   },
   {
     title: 'Address',
     dataIndex: 'address',
     filters: [
       {
-        text: 'London',
-        value: 'London',
+        text: 'Tupelo, MS',
+        value: 'Tupelo, MS',
       },
       {
-        text: 'New York',
-        value: 'New York',
+        text: 'London, UK',
+        value: 'London, UK',
+      },
+      {
+        text: 'Boston, MA',
+        value: 'Boston, MA',
+      },
+      {
+        text: 'Long Branch, NJ',
+        value: 'Long Branch, NJ',
+      },
+      {
+        text: 'Gary, IN',
+        value: 'Gary, IN',
       },
     ],
     onFilter: (value, record) => record.address.indexOf(value) === 0,
@@ -48,15 +75,46 @@ const columns = [
 ];
 
 const data = [];
-for (let i = 1; i <= 10; i++) {
-  data.push({
-    key: i,
-    name: 'Nguyen Dinh Son',
-    age: `${i}2`,
-    address: `New York No. ${i} Lake Park`,
-    description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`,
+data.push({
+    key: 1,
+    name: `Nguyen Dinh Son`,
+    birthday: `1998-05-29`,
+    address: `Tupelo, MS`,
+    level: `Commander`,
+    description: `My name is Nguyen Dinh Son, level Commander.`,
   });
-}
+data.push({
+    key: 2,
+    name: 'Nguyen Tri Hieu',
+    birthday: `1990-04-14`, 
+    address: `London, UK`,
+    level: `Commander`,
+    description: `My name is Nguyen Tri Hieu, level Commander.`,
+  });
+data.push({
+    key: 3,
+    name: 'Dang Ngoc Diep',
+    birthday: `1991-03-02`,
+    address: `Boston, MA`,
+    level: `Commander`,
+    description: `My name is Dang Ngoc Diep, level Commander.`,
+  });
+data.push({
+    key: 4,
+    name: 'Nguyen Van Khanh',
+    birthday: `1993-01-30`,
+    address: `Long Branch, NJ`,
+    level: `Worker`,
+    description: `My name is Nguyen Van Khanh, level Worker.`,
+  });
+data.push({
+    key: 5,
+    name: 'Tran Viet',
+    birthday: `1992-02-20`,
+    address: `Gary, IN`,
+    level: `Worker`,
+    description: `My name is Tran Viet, level Worker.`,
+  });
 
 const expandable = { expandedRowRender: record => <p>{record.description}</p> };
 const title = () => 'Here is title';
