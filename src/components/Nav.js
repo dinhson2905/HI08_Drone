@@ -32,6 +32,47 @@ class Nav extends Component {
                 <Link className="dropdown-item" to="/hi08/members">Members</Link>
               </div>
             </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/">HI_01
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li><li className="nav-item active">
+              <Link className="nav-link" to="/">HI_02
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li><li className="nav-item active">
+              <Link className="nav-link" to="/">HI_03
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li><li className="nav-item active">
+              <Link className="nav-link" to="/">HI_04
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/">HI_05
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/">HI_06
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/">HI_07
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/">HI_09
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li><li className="nav-item active">
+              <Link className="nav-link" to="/">HI_10
+                <span className="sr-only">(current)</span>
+              </Link>
+            </li>
           </ul>
           <ul className="navbar-nav ml-auto nav-flex-icons">
             <li className="nav-item">

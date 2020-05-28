@@ -89,3 +89,15 @@
 .content{
   width: 100% !important;
 }
+
+.drone_infor_table tr{
+  line-height: 30px
+}
+
+.drone_infor_table{
+  font-size: 30px;
+}
+
+.drone_infor_table tr td{
+  padding: 5px 10px;
+}
