@@ -48,7 +48,7 @@ class Footer extends Component {
 						{/* Grid column */}
 						<div className="col-md-3 col-lg-4 col-xl-3 mb-4">
 							{/* Content */}
-							<h6 className="text-uppercase font-weight-bold">Company name</h6>
+							<h6 className="text-uppercase font-weight-bold">About Us</h6>
 							<hr className="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
 							<p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
 							consectetur
@@ -56,23 +56,7 @@ class Footer extends Component {
 						</div>
 						{/* Grid column */}
 						{/* Grid column */}
-						<div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-							{/* Links */}
-							<h6 className="text-uppercase font-weight-bold">Products</h6>
-							<hr className="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
-							<p>
-								<a className="dark-grey-text" href="#!">MDBootstrap</a>
-							</p>
-							<p>
-								<a className="dark-grey-text" href="#!">MDWordPress</a>
-							</p>
-							<p>
-								<a className="dark-grey-text" href="#!">BrandFlow</a>
-							</p>
-							<p>
-								<a className="dark-grey-text" href="#!">Bootstrap Angular</a>
-							</p>
-						</div>
+						
 						{/* Grid column */}
 						{/* Grid column */}
 						<div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

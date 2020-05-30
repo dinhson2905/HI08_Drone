@@ -21,11 +21,6 @@ const Example = (props) => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/hi08/projects" className="navlinkwhite">Projects 
-            <i class="fas fa-tasks"></i> 
-          </NavLink>
-        </NavItem>
-        <NavItem>
           <NavLink href="/hi08/members" className="navlinkwhite">Members 
             <i class="fas fa-users"></i>
           </NavLink>

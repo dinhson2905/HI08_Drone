@@ -137,11 +137,6 @@ export default function DashBoard() {
 					</Grid>
 					<Grid item xs={12}>
 						<Paper className={classes.paper}>
-							<DashboardProjectTable />
-						</Paper>
-					</Grid>
-					<Grid item xs={12}>
-						<Paper className={classes.paper}>
 							<DashboardMemberTable />
 						</Paper>
 					</Grid>
