@@ -1,9 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import DashboardTitle from './DashboardTitle';
-import map_image from '../image/map.png';
 import { AnimateKeyframes } from "react-simple-animate";
-import { Tooltip, Typography, withStyles } from "@material-ui/core"
+import { Tooltip, withStyles } from "@material-ui/core"
+import LocationInfor from "./LocationInfor"
+
 
 function preventDefault(event) {
     event.preventDefault();
@@ -35,16 +35,28 @@ const HtmlTooltip = withStyles((theme) => ({
     },
 }))(Tooltip);
 
-export default function Deposits() {
+
+export default function Deposits(props) {
     const classes = useStyles();
+    function on_click(){
+        props._on_drone_click(props.drone.id)
+    }
     return (
-        <React.Fragment>
-            <DashboardTitle>Location</DashboardTitle>
-            <img
-                className="d-block w-100"
-                src={map_image}
-                alt="Second slide"
-            />
-        </React.Fragment >
+        <AnimateKeyframes
+            play={true}
+            iterationCount="infinite"
+            duration={25}
+            delay={0}
+            keyframes={props.drone.keyframes}
+        >
+            <HtmlTooltip
+                title={
+                    <LocationInfor drone = {props.drone}/>
+                }
+                placement="right"
+            >
+                <div style={divStyle} onClick={on_click} />
+            </HtmlTooltip>
+        </AnimateKeyframes>
     );
 }

@@ -35,16 +35,27 @@ const HtmlTooltip = withStyles((theme) => ({
     },
 }))(Tooltip);
 
-export default function Deposits() {
+export default function Deposits(props) {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <DashboardTitle>Location</DashboardTitle>
-            <img
-                className="d-block w-100"
-                src={map_image}
-                alt="Second slide"
-            />
-        </React.Fragment >
+            <DashboardTitle>{props.drone.name}</DashboardTitle>
+            <Typography component="p" variant="h6">
+                Wind: {props.drone.wind}km/h
+            </Typography>
+            <Typography component="p" variant="h6">
+                Battery: {props.drone.battery}%
+            </Typography>
+            <Typography component="p" variant="h6">
+                X : {props.drone.x}&deg;77'
+            </Typography>
+            <Typography component="p" variant="h6">
+                Y : {props.drone.y}&deg;99'
+            </Typography>
+            <Typography color="textSecondary" >
+                on 19 May, 2020
+            </Typography>
+        </React.Fragment>
+
     );
 }
