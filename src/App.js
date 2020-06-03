@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage';
 import SideBar from './components/SideBar'
 import Location from './pages/Location'
 import DashBoard from './pages/DashBoard'
-import Projects from './pages/Projects'
 import Drones from './pages/Drones'
 import Members from './pages/Members'
 import DroneDetail from './pages/DoneDetail'
@@ -26,11 +25,12 @@ class App extends Component {
           <Switch>
             <Route exact path="/">
               <HomePage />
+              <Footer />
             </Route>
             <Route path="/hi08">
               <div className="container-fluid" >
                 <div className="row">
-                  <div className="col-md-2"> <SideBar /> </div>
+                  <div className="col-md-2" style={{padding:"0px"}}> <SideBar /> </div>
                   <div className="col-md-10 content" style={{padding:"0px"}}>
                     <Route exact path="/hi08">
                       <DashBoard />
@@ -41,20 +41,17 @@ class App extends Component {
                     <Route exact path="/hi08/drones">
                       <Drones />
                     </Route>
-                    <Route path="/hi08/projects">
-                      <Projects />
-                    </Route>
                     <Route path="/hi08/members">
                       <Members />
                     </Route>
                     <Route path="/hi08/drones/:droneID" render={(props) => <DroneDetail {...props}/>}>
                     </Route>
+                    <Footer />
                   </div>
                 </div>
               </div>
             </Route>
           </Switch>
-          <Footer />
         </div>
       </Router>
     );

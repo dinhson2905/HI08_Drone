@@ -7,6 +7,7 @@ import DashboardTitle from '../components/DashboardTitle';
 import Link from '@material-ui/core/Link';
 import { Breadcrumbs } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
+import Box from '@material-ui/core/Box';
 
 
 
@@ -158,6 +159,8 @@ class Location extends Component {
                         {this.render_infor_drone()}
                     </div>
                 </div>
+                <Box pt={10}>
+				</Box>
             </div>
         );
     }
