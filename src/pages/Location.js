@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Location_map from '../components/LocationMap'
-import ProjectTable from '../components/DashboardProjectTable'
-import { Input, InputGroup, InputGroupAddon, InputGroupText } from 'reactstrap'
 import Typography from '@material-ui/core/Typography';
 import DashboardTitle from '../components/DashboardTitle';
 import Link from '@material-ui/core/Link';
@@ -51,7 +49,7 @@ class Location extends Component {
     }
 
     _on_drone_click = data => {     
-        console.log('data drone_show', data)
+        // console.log('data drone_show', data)
         this.setState({drone_show: data})
     }
     render_infor_drone() {
@@ -150,9 +148,7 @@ class Location extends Component {
                 </div> */}
                 <div className="row">
                     <div className="col-lg-9">
-                        
                             <Location_map drones={this.state.drone_list} _on_drone_click={this._on_drone_click} />
-    					
                     </div>
                     <div className="col-lg-3">
                         {this.render_infor_drone()}

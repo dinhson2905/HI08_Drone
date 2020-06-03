@@ -13,12 +13,13 @@ export default function Deposits(props) {
                     className="d-block w-100"
                     src={map_image}
                     alt="Second slide"
-                />
-            
-            {props.drones.map((drone)=>{ 
-                return <LocationDrone drone = {drone} _on_drone_click = {props._on_drone_click}/>
-            })}
+                />  
             </Paper>
+            <div className="map_location">
+                {props.drones.map((drone)=>{ 
+                    return <LocationDrone drone = {drone} _on_drone_click = {props._on_drone_click}/>
+                })}
+            </div>
         </React.Fragment >
     );
 }

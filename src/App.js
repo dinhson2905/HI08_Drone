@@ -30,7 +30,7 @@ class App extends Component {
             <Route path="/hi08">
               <div className="container-fluid" >
                 <div className="row">
-                  <div className="col-md-2"> <SideBar /> </div>
+                  <div className="col-md-2 " style={{padding:"0px"}}> <SideBar /> </div>
                   <div className="col-md-10 content" style={{padding:"0px"}}>
                     <Route exact path="/hi08">
                       <DashBoard />

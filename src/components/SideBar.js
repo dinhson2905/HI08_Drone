@@ -1,6 +1,6 @@
 import React from 'react';
 import './SideBar.css'
-import { Nav, NavItem, NavLink, Icon } from 'reactstrap';
+import { Nav, NavItem, NavLink} from 'reactstrap';
 
 const Example = (props) => {
   return (

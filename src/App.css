@@ -40,10 +40,12 @@
 
 
 .sidenav{
-    height: 100%;
-    margin-left: -15px;
+    height: 100%;    
 }
 
+.map_location div{
+  display: inline-block !important;
+}
 
 .sidenav .nav-item{
   /* border-bottom: 1px solid rgb(92, 81, 81); */
