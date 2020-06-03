@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 });
 
 const divStyle = {
-    display: "block",
+    display: "inline-block",
     width: 30,
     height: 30,
     borderRadius: "10px",
@@ -42,10 +42,11 @@ export default function Deposits(props) {
         props._on_drone_click(props.drone.id)
     }
     return (
-        <AnimateKeyframes
+        <AnimateKeyframes 
+            style={{display:"inline-block"}}
             play={true}
             iterationCount="infinite"
-            duration={25}
+            duration={45}
             delay={0}
             keyframes={props.drone.keyframes}
         >
