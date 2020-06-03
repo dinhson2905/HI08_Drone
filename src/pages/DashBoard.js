@@ -87,13 +87,9 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 	},
 	fixedHeight: {
-		height: 400,
+		height: 450,
 	},
 }));
-
-
-
-
 
 export default function DashBoard() {
 	const classes = useStyles();
@@ -121,6 +117,8 @@ export default function DashBoard() {
 					<Typography color="textPrimary">DashBoard</Typography>
 				</Breadcrumbs>
 			</div>
+			<Box pt={3}>
+			</Box>
 			<div className="container">
 				<Grid container spacing={3}>
 					<Grid item xs={12} md={8} lg={8}>
@@ -135,11 +133,6 @@ export default function DashBoard() {
 						<Paper className={fixedHeightPaper}>
 							{/* <Deposits /> */}
 							<DashboardDroneStatistic />
-						</Paper>
-					</Grid>
-					<Grid item xs={12}>
-						<Paper className={classes.paper}>
-							<DashboardProjectTable />
 						</Paper>
 					</Grid>
 					<Grid item xs={12}>

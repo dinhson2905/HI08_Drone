@@ -9,6 +9,9 @@ import { Breadcrumbs } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 
 
+
+// const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+
 class Location extends Component {
     state = {
         drone_list: [
@@ -119,7 +122,6 @@ class Location extends Component {
             }
         }
     }
-    componentWillMount
 
     render() {
         return (
@@ -136,7 +138,7 @@ class Location extends Component {
                         <Typography color="textPrimary">location</Typography>
                     </Breadcrumbs>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-lg-9">
                         <InputGroup>
                             <InputGroupAddon addonType="prepend">
@@ -145,10 +147,12 @@ class Location extends Component {
                             <Input placeholder="Drone name" />
                         </InputGroup>
                     </div>
-                </div>
+                </div> */}
                 <div className="row">
                     <div className="col-lg-9">
-                        <Location_map drones={this.state.drone_list} _on_drone_click={this._on_drone_click} />
+                        
+                            <Location_map drones={this.state.drone_list} _on_drone_click={this._on_drone_click} />
+    					
                     </div>
                     <div className="col-lg-3">
                         {this.render_infor_drone()}

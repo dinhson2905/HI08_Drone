@@ -74,6 +74,9 @@ class Nav extends Component {
               </Link>
             </li>
           </ul>
+          <form className="form-inline my-2 my-lg-0">
+            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+          </form>
           <ul className="navbar-nav ml-auto nav-flex-icons">
             <li className="nav-item">
               <a className="nav-link waves-effect waves-light">
