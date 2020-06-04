@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import DroneCard from '../components/DroneCard'
-import { Input, InputGroup, InputGroupAddon, InputGroupText } from 'reactstrap'
 import { Breadcrumbs, Link, Typography } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import axios from 'axios';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
 
-import { MDBInput, MDBCol, MDBIcon,MDBFormInline } from "mdbreact";
+import { MDBInput,  MDBIcon,MDBFormInline } from "mdbreact";
 import PopUp from "../components/DronePopUp"
 
 class Drones extends Component {
@@ -70,12 +67,11 @@ class Drones extends Component {
 					<div className="col-lg-9">
 							<MDBFormInline className="md-form">
 								<MDBIcon icon="search" />
-      							{/* <MDBInput hint="Drone Name" type="text" containerClass="active-pink active-pink-2 mt-0  mb-3" onChange={this.enterDroneName} /> */}
-								  <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Drone name" aria-label="Search" onChange={this.enterDroneName}/>
+      							  <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Drone name" aria-label="Search" onChange={this.enterDroneName}/>
 							</MDBFormInline>
 					</div>
 					<div className="col-lg-3">
-							<PopUp />
+							<PopUp id = {this.state.drones.length+1}/>
 					</div>
 				</div>
 				<h3 style={{ textAlign: "center", padding: "10px" }}> Drones List</h3>
