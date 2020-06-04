@@ -75,7 +75,7 @@ class DroneDetail extends Component {
                                     <td>{this.state.drone.max_data_link_range}</td>
                                 </tr>
                                 <tr>
-                                    <td>Power supple </td>
+                                    <td>Power supply </td>
                                     <td>{this.state.drone.power_supply}</td>
                                 </tr>
                             </tbody>
