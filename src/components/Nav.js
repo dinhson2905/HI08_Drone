@@ -28,7 +28,6 @@ class Nav extends Component {
                 <Link className="dropdown-item" to="/hi08">DashBoard</Link>
                 <Link className="dropdown-item" to="/hi08/location">Location</Link>
                 <Link className="dropdown-item" to="/hi08/drones">Drones</Link>
-                <Link className="dropdown-item" to="/hi08/projects">Projects</Link>
                 <Link className="dropdown-item" to="/hi08/members">Members</Link>
               </div>
             </li>
